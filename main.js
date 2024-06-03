@@ -30,8 +30,8 @@ document.getElementById('contactForm').addEventListener('submit', function (even
     const phone = document.getElementById('phone').value;
 
     // Телеграм токен и ID чата
-    const token = '7188094125:AAGEIipf6Jhh0igbRiydlD7EliQ3WQYoyR8\n'; // Замените на ваш токен бота
-    const chatId = 6457971132; // Замените на ваш ID чата
+    const token = '7188094125:AAGEIipf6Jhh0igbRiydlD7EliQ3WQYoyR8'; // Замените на ваш токен бота
+    const chatId = '6457971132'; // Замените на ваш ID чата
 
     const message = `Имя: ${name}\nТелефон: ${phone}`;
 
@@ -52,13 +52,12 @@ document.getElementById('contactForm').addEventListener('submit', function (even
         .then(response => response.json())
         .then(data => {
             if (data.ok) {
-                alert('Сообщение отправлено успешно!');
+                console.log("Message Succesfuly Send")
             } else {
-                alert('Ошибка отправки сообщения.');
+                alert('Message UnSuccessfuly send');
             }
         })
         .catch(error => {
             console.error('Ошибка:', error);
-            alert('Ошибка отправки сообщения.');
         });
 });
