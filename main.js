@@ -10,6 +10,8 @@ document.getElementById('language-switch').addEventListener('change', function (
         document.getElementById('service3').textContent = 'Доставка в течение 1 часа';
         document.getElementById('service4').textContent = '20 летний успешный опыт';
         document.getElementById('form-text').textContent = 'Заполните форму, чтобы узнать стоимость доставки';
+        document.getElementById("nameinput").placeholder = "Имя";
+        document.getElementById("phone").placeholder = "Номер телефона";
         document.querySelector('.Form_btn').textContent = 'Отправить';
     } else {
         document.getElementById('hero-title').textContent = 'O’ZBEKISTON bo’ylab yuk tashish xizmati';
@@ -18,6 +20,8 @@ document.getElementById('language-switch').addEventListener('change', function (
         document.getElementById('service3').textContent = '1 soat yuk mashina qoyib beramiz';
         document.getElementById('service4').textContent = '20 yillik muvaffaqiyatli tajriba';
         document.getElementById('form-text').textContent = 'Yuk tashish xarajatlarini bepul bilish uchun formani to’ldiring';
+        document.getElementById("nameinput").placeholder = "Ism";
+        document.getElementById("phone").placeholder = "Telefon raqami";
         document.querySelector('.Form_btn').textContent = 'Yuborish';
     }
 });
